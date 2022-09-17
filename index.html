@@ -1,3 +1,4 @@
+@@ -0,0 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
         background-color: lightblue;
         text-align: center;
       }
-      
+
       .lds-ring {
   display: inline-block;
   position: relative;
@@ -49,11 +50,11 @@
 </head>
 <body>
   <script>
-    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbxmpr9PrhxFm-BDq7RZ1X6ytsxBC-m72oMHNnaJlEJ33Sm1MQsPZtcgItdbsIhMYSgYdA/exec";
-    
+    const AS_URL_BASE = "";
+
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
-    
+
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
@@ -68,9 +69,9 @@
     }
 
   </script>
-  
+
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-  
-  
+
+
 </body>
 </html>
